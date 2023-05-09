@@ -1,0 +1,27 @@
+uuid: 80261de0-f405-4404-9162-cc0fed09865f
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.curso.body
+    - field.field.node.curso.field_categoria
+    - field.field.node.curso.field_programa
+    - node.type.curso
+  module:
+    - user
+id: node.curso.full
+targetEntityType: node
+bundle: curso
+mode: full
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_categoria: true
+  field_programa: true
+  langcode: true
