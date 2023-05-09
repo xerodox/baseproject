@@ -1,0 +1,29 @@
+uuid: 72c084b3-9459-4280-9698-74ef988941a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.curso
+    - taxonomy.vocabulary.categoria
+id: node.curso.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: curso
+label: Categoria
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria: categoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
