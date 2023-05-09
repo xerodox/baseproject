@@ -9,27 +9,19 @@ dependencies:
     - field.field.node.curso.field_programa
     - node.type.curso
   module:
-    - text
     - user
 id: node.curso.teaser
 targetEntityType: node
 bundle: curso
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 101
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  body: true
   field_categoria: true
   field_programa: true
   langcode: true

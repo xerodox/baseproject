@@ -1,0 +1,8 @@
+uuid: e38f2bd0-9187-46b0-882b-e674b5b484fe
+langcode: es
+status: true
+dependencies: {  }
+id: cursos_destacados
+label: 'Cursos destacados'
+revision: 0
+description: ''

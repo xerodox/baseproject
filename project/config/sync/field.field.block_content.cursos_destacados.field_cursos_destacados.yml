@@ -1,0 +1,29 @@
+uuid: 8eac6173-3a90-4f46-9dba-114bbf105d6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.cursos_destacados
+    - field.storage.block_content.field_cursos_destacados
+    - node.type.curso
+id: block_content.cursos_destacados.field_cursos_destacados
+field_name: field_cursos_destacados
+entity_type: block_content
+bundle: cursos_destacados
+label: 'Cursos destacados'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      curso: curso
+    sort:
+      field: status
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

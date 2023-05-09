@@ -1,0 +1,11 @@
+uuid: f4ad7c86-3d7d-4bff-8aa2-63201085422d
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.cursos_destacados
+id: block_content.cursos_destacados
+target_entity_type_id: block_content
+target_bundle: cursos_destacados
+default_langcode: site_default
+language_alterable: false

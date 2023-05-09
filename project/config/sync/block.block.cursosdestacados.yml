@@ -1,0 +1,30 @@
+uuid: fe295342-fed4-4b19-b74e-593a79aa6e01
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:cursos_destacados:ba02ea0e-b38b-4e1c-b1d8-d2c4bf869d2a'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: cursosdestacados
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:ba02ea0e-b38b-4e1c-b1d8-d2c4bf869d2a'
+settings:
+  id: 'block_content:ba02ea0e-b38b-4e1c-b1d8-d2c4bf869d2a'
+  label: 'Cursos destacados'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cursos

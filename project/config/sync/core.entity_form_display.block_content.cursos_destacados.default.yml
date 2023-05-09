@@ -1,0 +1,38 @@
+uuid: dc3c4502-d85b-46f5-880c-4c7dc227a503
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.cursos_destacados
+    - field.field.block_content.cursos_destacados.field_cursos_destacados
+id: block_content.cursos_destacados.default
+targetEntityType: block_content
+bundle: cursos_destacados
+mode: default
+content:
+  field_cursos_destacados:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

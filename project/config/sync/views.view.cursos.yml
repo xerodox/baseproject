@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.curso
-    - system.menu.admin
+    - system.menu.account
   module:
     - node
     - user
@@ -256,8 +256,8 @@ display:
         description: ''
         weight: 0
         expanded: true
-        menu_name: admin
-        parent: 'admin_toolbar_tools.extra_links:entity.menu.edit_form.main'
+        menu_name: account
+        parent: ''
         context: '0'
     cache_metadata:
       max-age: -1
